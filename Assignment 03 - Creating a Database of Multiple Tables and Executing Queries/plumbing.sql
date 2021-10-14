@@ -1,0 +1,151 @@
+--
+-- File generated with SQLiteStudio v3.3.3 on Thu Oct 14 13:03:06 2021
+--
+-- Text encoding used: UTF-8
+--
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Table: customer
+CREATE TABLE customer (CustomerID INTEGER PRIMARY KEY, FirstName VARCHAR, LastName VARCHAR, Address VARCHAR, City VARCHAR, State VARCHAR, ZipCode VARCHAR, PhoneNumber VARCHAR);
+INSERT INTO customer (CustomerID, FirstName, LastName, Address, City, State, ZipCode, PhoneNumber) VALUES (1, 'Benjamin', 'Masterson', '102 West Bell Avenue', 'Livingston', 'NJ', '07039', '9732340130');
+INSERT INTO customer (CustomerID, FirstName, LastName, Address, City, State, ZipCode, PhoneNumber) VALUES (2, 'Mary', 'Milgrom', '14 Elm Lane', 'Dover', 'NJ', '07806', '2019230021');
+INSERT INTO customer (CustomerID, FirstName, LastName, Address, City, State, ZipCode, PhoneNumber) VALUES (3, 'Robert', 'Goodman', '432 Lake Drive', 'Ewing', 'NJ', '08618', '6098438299');
+INSERT INTO customer (CustomerID, FirstName, LastName, Address, City, State, ZipCode, PhoneNumber) VALUES (4, 'Margerita', 'Colon', '442 W. 73rd Street', 'New York', 'NY', '10021', '2123240901');
+INSERT INTO customer (CustomerID, FirstName, LastName, Address, City, State, ZipCode, PhoneNumber) VALUES (5, 'Irving', 'Wachtel', '4020 Main Street', 'Hammonton', 'NJ', '08037', '6092388814');
+INSERT INTO customer (CustomerID, FirstName, LastName, Address, City, State, ZipCode, PhoneNumber) VALUES (6, 'Geoffrey', 'Hammer', '41 Michele Drive', 'Exton', 'PA', '19341', '6104398932');
+INSERT INTO customer (CustomerID, FirstName, LastName, Address, City, State, ZipCode, PhoneNumber) VALUES (7, 'Ashley', 'Flannery', '401 Jefferson Road', 'Willow Grove', 'PA', '19090', '2153292917');
+INSERT INTO customer (CustomerID, FirstName, LastName, Address, City, State, ZipCode, PhoneNumber) VALUES (8, 'Joseph', 'Brower', '38 Southern Way', 'Princeton', 'NJ', '08540', '6099211572');
+INSERT INTO customer (CustomerID, FirstName, LastName, Address, City, State, ZipCode, PhoneNumber) VALUES (9, 'Xiaoming', 'Wang', '82 Magellan Court', 'Franklin Park', 'NJ', '08823', '7323311876');
+INSERT INTO customer (CustomerID, FirstName, LastName, Address, City, State, ZipCode, PhoneNumber) VALUES (10, 'Derek', 'Escher', '89 Dandelion Lane', 'Hamilton', 'NJ', '08609', '6092433211');
+INSERT INTO customer (CustomerID, FirstName, LastName, Address, City, State, ZipCode, PhoneNumber) VALUES (11, 'Laura', 'Ng', '502 Ocean Avenue', 'Ocean Grove', 'NJ', '07756', '7323249893');
+INSERT INTO customer (CustomerID, FirstName, LastName, Address, City, State, ZipCode, PhoneNumber) VALUES (12, 'Robert', 'Sloan', '430 Steinert Street', 'Hamilton', 'NJ', '08609', '6095867724');
+INSERT INTO customer (CustomerID, FirstName, LastName, Address, City, State, ZipCode, PhoneNumber) VALUES (13, 'Nikil', 'Patel', '3010 Astor Court', 'Bridgeport', 'CT', '06607', '2033488811');
+INSERT INTO customer (CustomerID, FirstName, LastName, Address, City, State, ZipCode, PhoneNumber) VALUES (14, 'Merrick', 'Hubler', '239 Madison Street', 'Hamilton', 'NY', '13346', '3152348988');
+
+-- Table: orderdetail
+CREATE TABLE orderdetail (OrderID INTEGER, ProductID INTEGER, Quantity INTEGER);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (1, 13, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (1, 14, 4);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (1, 27, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (2, 1, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (2, 6, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (2, 20, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (2, 22, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (3, 5, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (3, 20, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (3, 22, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (4, 3, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (4, 10, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (4, 22, 2);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (5, 3, 2);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (5, 12, 2);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (5, 16, 2);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (6, 7, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (6, 14, 10);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (7, 28, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (7, 30, 3);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (8, 1, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (8, 4, 3);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (8, 8, 4);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (8, 11, 2);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (8, 12, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (9, 6, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (10, 2, 2);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (10, 22, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (10, 23, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (11, 16, 2);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (11, 20, 2);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (12, 21, 10);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (12, 29, 10);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (12, 30, 10);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (13, 9, 4);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (13, 16, 10);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (13, 24, 2);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (14, 19, 2);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (14, 28, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (15, 18, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (15, 20, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (16, 29, 2);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (17, 19, 2);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (18, 9, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (18, 25, 2);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (18, 26, 2);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (19, 14, 25);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (20, 24, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (21, 4, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (22, 27, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (23, 21, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (23, 28, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (23, 29, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (24, 7, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (24, 13, 5);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (24, 14, 3);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (24, 16, 1);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (25, 12, 2);
+INSERT INTO orderdetail (OrderID, ProductID, Quantity) VALUES (25, 29, 2);
+
+-- Table: orders
+CREATE TABLE orders (OrderID INTEGER PRIMARY KEY, CustomerID INTEGER, OrderDate DATE);
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (1, 4, '2013-04-15');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (2, 3, '2013-04-16');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (3, 6, '2013-04-17');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (4, 7, '2013-04-18');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (5, 1, '2013-04-19');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (6, 1, '2013-04-20');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (7, 2, '2013-04-21');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (8, 2, '2013-04-22');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (9, 1, '2013-04-23');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (10, 2, '2013-04-24');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (11, 1, '2013-04-25');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (12, 7, '2013-04-26');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (13, 4, '2013-04-27');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (14, 6, '2013-04-28');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (15, 9, '2013-04-29');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (16, 6, '2013-04-30');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (17, 11, '2013-05-01');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (18, 11, '2013-05-02');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (19, 12, '2013-05-03');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (20, 12, '2013-05-04');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (21, 10, '2013-05-05');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (22, 10, '2013-05-06');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (23, 8, '2013-05-07');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (24, 6, '2013-05-08');
+INSERT INTO orders (OrderID, CustomerID, OrderDate) VALUES (25, 6, '2013-05-09');
+
+-- Table: product
+CREATE TABLE product (ProductID INTEGER PRIMARY KEY, ProductName VARCHAR, UnitsInStock INTEGER, UnitsOnOrder INT, UnitPrice DOUBLE);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (1, 'Ivory Clawfoot Tub', 3, 0, 1899.0);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (2, 'Black Soaking Tub Built In', 4, 3, 1999.0);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (3, 'Massage Jet Tub', 2, 0, 2099.0);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (4, 'Deluxe Massage Jet Tub', 3, 1, 2299.0);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (5, 'Infinity Master Tub', 4, 2, 2599.0);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (6, 'Nickel Deluxe Kitchen Faucet', 10, 0, 499.0);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (7, 'Omnidirectional Shower', 3, 0, 899.0);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (8, 'Outdoor Soaking Tub', 10, 5, 1599.0);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (9, 'Antique Style Brass Bath Faucet Set', 4, 0, 399.0);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (10, 'Deluxe Kitchen Faucet Set Black', 10, 5, 799.0);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (11, 'Deluxe Filtration System', 10, 0, 1245.0);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (12, 'Spacesaver Toilet', 10, 0, 249.0);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (13, 'Massage Shower System', 50, 15, 449.95);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (14, 'Replacement Valve Units Type A', 500, 200, 9.99);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (15, 'Replacement Valve Units Type B', 100, 50, 14.79);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (16, 'Budget Bath Sink Set', 15, 3, 179.95);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (17, 'Utility Sink set', 150, 50, 69.95);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (18, 'Unclogger Tool Set', 55, 0, 59.95);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (19, 'Nickel Finish Shower Head', 30, 15, 39.95);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (20, 'Chrome Modern Kitchen Faucet', 25, 10, 189.95);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (21, 'Frost-Free Outdoor Faucet Set', 20, 0, 65.95);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (22, 'Complete Bathroom Kit', 15, 5, 1395.0);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (23, 'Victorian Kitchen Faucet with Spray', 10, 5, 249.95);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (24, 'Deluxe Spraymaster System', 5, 0, 569.95);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (25, 'Waterfall Bath Faucet Set', 10, 0, 95.95);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (26, 'Flow Regulator Valve', 150, 50, 75.95);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (27, 'Budget Filter System', 10, 5, 115.95);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (28, 'Leak Fixer System', 75, 25, 29.95);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (29, 'Retro Nickel Bath/Shower Combo', 50, 5, 129.95);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (30, 'Flexible Spray Shower', 25, 10, 59.95);
+INSERT INTO product (ProductID, ProductName, UnitsInStock, UnitsOnOrder, UnitPrice) VALUES (31, 'Circulator Pump Fitting', 15, 0, 45.95);
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;
