@@ -2,6 +2,7 @@
 
 # Learning SQL through CS 442 at Stevens Instiute of Tech. and additional projects!
 
-DBMS Overview:
+DBMS(s):
 * SQLiteStudio
 * PostgresSql
+* Azure
