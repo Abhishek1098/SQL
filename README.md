@@ -6,3 +6,9 @@ DBMS(s):
 * SQLiteStudio
 * PostgresSql
 * Azure
+
+Assignment 1 I expressed complex OLAP queries in SQL. 
+Topics: 
+* Aggregate funtions
+* nested subqueries
+* JOINs
