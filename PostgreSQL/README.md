@@ -46,3 +46,9 @@ insert into sales values ('Helen', 'Grapes', 10, 12, 2018, 'PA', 545, '2018-12-1
 insert into sales values ('Claire', 'Grapes', 1, 10, 2017, 'CT', 477, '2017-10-01');
 ...
 ```
+
+![psql](psql.PNG)
+
+![pgadmin4](pgadmin4.PNG)
+
+![works](verify.PNG)
