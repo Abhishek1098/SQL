@@ -12,13 +12,8 @@
 > - [ ] but for all other months and the average sale of the product and the month but for all other states.
 
 ```sql
-select cust, prod, month, state, avg(quant)
-from sales
-group by cust, prod, month, state;
 
-select cust, month, state, avg(quant)
-from sales
-group by cust, month, state;
+
 ```
 
 ## Query 2
@@ -28,19 +23,19 @@ group by cust, month, state;
 *The “YEAR” attribute is not considered for this query – for example, both Q1 of 2017 and Q1 of 2018 are considered Q1 regardless of the year.*
 
 ```sql
-select * from sales;
+
 ```
 
 ## Query 3
 **For each product,**
-- [ ] find the median sales quantity (assume an odd number of salesfor simplicity of presentation).   
+- [ ] find the median sales quantity (assume an odd number of sales for simplicity of presentation).   
 
 *(NOTE –“median” is defined as “denoting or relating to a value or quantity lying at the midpoint of a frequency distribution of observed values or quantities, such that there is an equal probability of falling above or below it.”* \
 
 *E.g., Median value of the list {13, 23, 12, 16, 15, 9, 29} is 15.*
 
 ```sql
-select * from sales;
+
 ```
 
 ## Query 4
